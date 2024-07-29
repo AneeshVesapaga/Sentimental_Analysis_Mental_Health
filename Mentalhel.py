@@ -15,8 +15,8 @@ st.write('This app performs sentiment analysis on mental health statements.')
 
 
 try:
-    model = pickle.load(open(r"C:\Users\anees\Data Analysis\Machine Learing\ML jupyter problems\mh.pkl",'rb'))
-    bow = pickle.load(open(r"C:\Users\anees\Data Analysis\Machine Learing\ML jupyter problems\bow1.pkl",'rb'))
+    model = pickle.load(open(r"mh.pkl",'rb'))
+    bow = pickle.load(open(r"bow1.pkl",'rb'))
 except Exception as e:
     st.error(f"An error occurred: {e}")
 
